@@ -3,3 +3,29 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.contenitorePagina{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(139, 0, 0);
+}
+
+.contenitoreForm{
+    width: 80%;
+    height: 35%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 2px #000000;
+    -webkit-box-shadow: 5px 5px 10px 2px #000000;
+    -moz-box-shadow: 5px 5px 10px 2px #000000;
+}
+
+.contenitoreBiglietto{
+    width: 80%;
+    height: 35%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 2px #000000;
+    -webkit-box-shadow: 5px 5px 10px 2px #000000;
+    -moz-box-shadow: 5px 5px 10px 2px #000000;
+}
