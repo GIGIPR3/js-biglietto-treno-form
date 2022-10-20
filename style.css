@@ -24,8 +24,25 @@
     width: 80%;
     height: 35%;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 5px 5px 10px 2px #000000;
     -webkit-box-shadow: 5px 5px 10px 2px #000000;
     -moz-box-shadow: 5px 5px 10px 2px #000000;
+}
+
+.nameZone{
+    height: 80%;
+    width: 30%;
+    background-color: rgb(151, 151, 151);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.dettaglio{
+    height: 80%;
+    width: 70%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: inline-block;
+    flex-grow: 2;
 }
