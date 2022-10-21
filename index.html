@@ -20,23 +20,23 @@
             <div class="row g-3 ms-3 me-3 pt-3">
                 <div class="col">
                     <label for="inputState" class="form-label">Nome e Cognome</label>
-                  <input type="text" class="form-control" placeholder="Nome e Cognome" aria-label="First name">
+                  <input type="text" class="form-control" placeholder="Nome e Cognome" aria-label="First name" id="nominativo">
                 </div>
                 <div class="col">
                     <label for="inputState" class="form-label">KM da percorrere</label>
-                  <input type="text" class="form-control" placeholder="KM da percorrere" aria-label="Last name">
+                  <input type="text" class="form-control" placeholder="KM da percorrere" aria-label="Last name" id="kmDaPercorrere">
                 </div>
                 <div class="col-md-4">
                     <label for="inputState" class="form-label">Fascia d'età</label>
-                    <select id="inputState" class="form-select">
-                      <option>Maggiorenne</option>
-                      <option>Minorenne</option>
+                    <select id="inputState" class="form-select" value="">
+                      <option value="">Maggiorenne</option>
+                      <option value="">Minorenne</option>
                     </select>
                 </div>
             </div>
 
             <div class="text-center mt-4">
-                <button type="button" class="btn btn-success">Genera</button>
+                <button type="button" class="btn btn-success" id="btnGenera" onclick="priceCalc()">Genera</button>
                 <button type="button" class="btn btn-danger">Annulla</button>
             </div>
             
@@ -46,21 +46,59 @@
             <strong>DETTAGLI BIGLIETTO</strong> 
         </div>
 
-        <div class="contenitoreBiglietto m-auto mt-3 ps-3 pe-1">
+        <div class="contenitoreBiglietto m-auto mt-3 ps-3 pe-3">
 
             <div class="fs-4 ms-3 pt-2">
                 <strong>DETTAGLIO PASSEGGERO</strong>
             </div>
 
-            <div class="d-flex row w-100 h-100">
+            <div class="biglietto w-100 h-100">
 
-                <div class="nameZone col">
+                <div class="nameZone">
                     
+                    <div class="mt-4 ms-2 fs-4">
+                        Nome Passeggero
+                    </div>
+
+                    <div class="ms-2 mt-3">
+                        <h4 id="risultatoNome"></h4>
+                    </div>
 
                 </div>
 
-                <div class="dettaglio col">
+                <div class="dettaglio">
+                    <div>
+                        <div class="pt-3">
+                            <strong>Offerta</strong>
+                        </div>
+                        <div class="mt-5 fs-5">
+                            biglietto standard
+                        </div>
+                    </div>
+                    <div>
+                        <div class="pt-3">
+                            <strong>Carrozza</strong>
+                        </div>
+                        <div class="mt-5 fs-5" id="numeroCarrozza">
 
+                        </div>
+                    </div>
+                    <div>
+                        <div class="pt-3">
+                            <strong>Codice CP</strong>
+                        </div>
+                        <div class="mt-5 fs-5" id="numeroCP">
+
+                        </div>
+                    </div>
+                    <div>
+                        <div class="pt-3">
+                            <strong>Costo biglietto</strong>
+                        </div>
+                        <div class="mt-5 fs-5" id="costoTicket">
+                            
+                        </div>
+                    </div>
 
                 </div>   
 
