@@ -66,4 +66,8 @@ function priceCalc(){
     document.getElementById( 'costoTicket' ).innerHTML = prezzoBiglietto + "$";
 
     document.getElementById('risultatoNome').innerHTML = valueName;
+
+    document.getElementById( 'numeroCarrozza').innerHTML = Math.floor(Math.random() * 10);
+
+    document.getElementById( 'numeroCP').innerHTML = Math.floor(Math.random() * 10000);
 } 
